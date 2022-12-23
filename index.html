@@ -1,0 +1,55 @@
+<!--
+File: index.html
+GUI Assignment: Homework 5
+Musa Jamshed, UMass Lowell Computer Science, Musa_Jamshed@student.uml.edu
+Last Modified: December 22, 2022
+Description: Scrabble with Drag-and-Drop
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Scrabble</title>
+</head>
+<body>
+    <!-- wrapper div to contain everything in -->
+    <div class= "wrapper">
+        <!-- webpage header -->
+        <header>
+            <h3>Scrabble with Drag-and-Drop</h3>
+        </header>
+
+        <div id = "scoreboard">
+            <!-- instruct user how to play -->
+            <p id="instructions">Welcome! Create words with at least 2 letters & no gap between letters.</p>
+            
+            <!-- display user's score -->
+            <div class="label">Score: </div>
+            <div id = "score">0</div>
+            
+            <!-- keep track of user's high score -->
+            <div class="label">High Score: </div>
+            <div id = 'highScore'>0</div>
+        </div>
+
+        <!-- board where the letters are placed -->
+        <div id = "board"></div>
+
+        <!-- rack where  the letters are dragged from -->
+        <div id = "rack"></div>
+
+        <!-- submit and refresh buttons -->
+        <button type="button" onClick="score()" id="submit">Submit</button>
+        <button type="button" onClick="restart()" id="refresh">Refresh</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="js/script.js"></script>
+</body>
+</html>

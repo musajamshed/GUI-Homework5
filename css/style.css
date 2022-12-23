@@ -1,0 +1,110 @@
+/*
+File: style.css
+GUI Assignment: Homework 5
+Musa Jamshed, UMass Lowell Computer Science, Musa_Jamshed@student.uml.edu
+Last Modified: December 22, 2022
+Description: Scrabble with Drag-and-Drop
+*/
+
+/* adjusting the page body */
+body {
+    background-color: #7C573D;
+    color: #3C280D;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styling for the wrapper div */
+.wrapper {
+    max-width: 700px;
+    height: 700px;
+    text-align: center;
+    margin: auto;
+    border: solid 15px #3C280D;
+    background-color: #ebe0d0
+}
+
+/* customizing the header */
+header {
+    background-color: #3C280D;
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+/* special font for the instructions */
+#instructions {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #3C280D;
+    font-size: medium;
+}
+
+/* dimensions of the board */
+#board {
+    max-width:700px;
+    margin: 0px auto;
+}
+
+/* dimensions of the rack */
+#rack {
+    max-width:700px;
+    height: 100px;
+    margin: 200px auto 20px auto;
+    background-image: url("../img/tile-holder.png");
+    background-repeat: no-repeat;
+}
+
+/* appearance of the score */
+#score {
+    display: inline;
+    color: #7C573D;
+    font-size: large;
+    margin: 200px auto 20px auto;
+    max-width:700px;
+}
+
+/* appearance of the high score */
+#highScore {
+    display: inline;
+    color: green;
+    font-size: large;
+    margin: 200px auto 20px auto;
+    max-width:700px;
+}
+
+.label {
+    color: #3C280D;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h3 {
+    background-color: #3C280D;
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+/* cusomizing the buttons */
+#submit, #refresh {
+    color: white;
+    background-color: #3C280D;
+    min-width: 20%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* dimensions of each letter tile */
+.letterTile {
+    max-width: 70px;
+    margin-left: 10px;
+    margin-top:10px;
+}
